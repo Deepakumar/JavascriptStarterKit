@@ -1,0 +1,43 @@
+{
+  "name": "javascriptstarterkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deepan",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-jslint": "^1.0.10",
+    "gulp-karma": "0.0.5",
+    "gulp-open": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "jasmine-core": "^2.6.4",
+    "jquery": "^3.2.1",
+    "karma": "^1.7.0",
+    "node-notifier": "^5.1.2",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-jslint-simple": "^1.0.2",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "karma": "^1.7.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "0.0.31"
+  }
+}
