@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="2"  lines-covered="2"  line-rate="1"  branches-valid="0"  branches-covered="0"  branch-rate="1"  timestamp="1501777291529" complexity="0" version="0.1">
+<sources>
+	<source>H:\Development\JavascriptStarterKit</source>
+</sources>
+<packages>
+	<package name="src"  line-rate="1"  branch-rate="1" >
+	<classes>
+		<class name="main.js"  filename="src\main.js"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="helloWorld"  hits="1"  signature="()V" >
+				<lines><line number="4"  hits="1" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="4"  hits="1"  branch="false" />
+			<line number="6"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+</packages>
+</coverage>
