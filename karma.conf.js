@@ -9,7 +9,7 @@ module.exports = function(config) {
         browsers: ['PhantomJS'],
         files: [
             'node_modules/jquery/dist/jquery.js',
-            'src/main.js',
+            'src/**/*.js',
             'test/**/*.js'
         ],
         preprocessors: {
