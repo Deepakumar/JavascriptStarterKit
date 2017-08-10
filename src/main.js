@@ -13,7 +13,15 @@ var mainFunctions =  function(util) {
     };
 
     this.calculateAbs = function(number){
-        return this.util.abs(number);
+        return util.abs(number);
+    }
+    
+    this.sumOfNumbers = function(numbers){
+        var currentValue=0;
+        numbers.forEach(function(number){
+            currentValue = util.add(currentValue,number);
+        });
+        return currentValue;
     }
 }
 

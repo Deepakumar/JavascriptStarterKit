@@ -8,7 +8,11 @@ var myMath =  function() {
     }
 
     this.sqrt = function(number){
-        Math.sqrt(number);
+        return Math.sqrt(number);
+    }
+
+    this.add = function(num1, num2){
+        return num1 + num2;
     }
 };
 

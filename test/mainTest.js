@@ -27,4 +27,15 @@ describe('Hello world', function () {
         expect(math.abs).toHaveBeenCalled();
         expect(math.abs).toHaveBeenCalledWith(jasmine.any(Number));
     });
+    
+    it("Sum of Number array",function(){
+        spyOn(math, "add").and.callThrough();
+
+        var sum = func.sumOfNumbers([2,4,6,8]);
+        expect(sum).toEqual(20);
+        expect(math.add.calls.any()).toBe(true);
+        expect(math.add.calls.count(4)).toBe(4);
+    });
+
+    
 });
