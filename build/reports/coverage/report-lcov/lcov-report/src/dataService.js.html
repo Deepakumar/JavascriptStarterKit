@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src\util.js</title>
+    <title>Code coverage report for src\dataService.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../index.html">all files</a> / <a href="index.html">src/</a> util.js
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> dataService.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">71.43% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>5/7</span>
+        <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,14 +30,14 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/4</span>
+        <span class='fraction'>0/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">71.43% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>5/7</span>
+        <span class='fraction'>1/2</span>
       </div>
     </div>
   </div>
@@ -54,53 +54,29 @@
 9
 10
 11
-12
-13
-14
-15
-16
-17
-18
-19
-20</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+12</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2×</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-yes">4×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
- * Created by Deepan on 8/9/2017.
+ * Created by Deepan on 8/13/2017.
  */
-var myMath =  function() {
-&nbsp;
-    this.abs = <span class="fstat-no" title="function not covered" >function(number) {</span>
-<span class="cstat-no" title="statement not covered" >        return Math.abs(number);</span>
-    }
-&nbsp;
-    this.sqrt = <span class="fstat-no" title="function not covered" >function(number){</span>
-<span class="cstat-no" title="statement not covered" >        return Math.sqrt(number);</span>
-    }
-&nbsp;
-    this.add = function(num1, num2){
-        return num1 + num2;
-    }
-};
-&nbsp;
-&nbsp;
-&nbsp;</pre></td></tr>
+<span class="fstat-no" title="function not covered" >function getNumberWord(id, callback) {</span>
+<span class="cstat-no" title="statement not covered" >    $.ajax({</span>
+        type: "GET",
+        url: "http://numbersapi.com/" + id,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: callback
+    });
+}</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->

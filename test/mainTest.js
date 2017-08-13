@@ -1,7 +1,7 @@
 /**
  * Created by Deepan on 7/23/2017.
  */
-describe('Hello world', function () {
+describe('Numeric Functions', function () {
 
     var outPut;
     var math = new myMath();
@@ -9,6 +9,8 @@ describe('Hello world', function () {
 
     beforeEach(function(){
         outPut=4;
+        jasmine.addMatchers(toBeOddMatcher);
+        jasmine.addMatchers(toBeEvenMatcher);
     });
 
     it('Add Numbers', function () {
@@ -35,6 +37,25 @@ describe('Hello world', function () {
         expect(sum).toEqual(20);
         expect(math.add.calls.any()).toBe(true);
         expect(math.add.calls.count(4)).toBe(4);
+
+        var calls =math.add.calls.all();
+
+        for(x=0,length = calls.length; x < length; x += 1)
+        {
+            expect(calls[x].object.id);
+        }
+    });
+
+    it("Should return Odd Number",function(){
+        var output = func.addNumbers(1,2);
+
+        expect(3).toBeOdd();
+    });
+
+    it("Should return Even Number",function(){
+        var output = func.addNumbers(1,2);
+
+        expect(2).toBeEven();
     });
 
     

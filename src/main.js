@@ -23,6 +23,12 @@ var mainFunctions =  function(util) {
         });
         return currentValue;
     }
+
+    this.addAfterDelay = function(delay,callback,num1,num2){
+        setTimeout(function() {
+            callback(util.add(num1,num2));
+        },delay);
+    }
 }
 
 

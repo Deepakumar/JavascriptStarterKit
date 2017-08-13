@@ -10,7 +10,8 @@ module.exports = function(config) {
         files: [
             'node_modules/jquery/dist/jquery.js',
             'src/**/*.js',
-            'test/**/*.js'
+            'test/**/*.js',
+            'test/matchers/*.js'
         ],
         preprocessors: {
             'src/**/*.js': ['coverage']
